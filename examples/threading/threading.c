@@ -15,6 +15,7 @@ void* threadfunc(void* thread_param)
     // hint: use a cast like the one below to obtain thread arguments from your parameter
     //struct thread_data* thread_func_args = (struct thread_data *) thread_param;
     struct thread_data* thread_func_args = (struct thread_data *) thread_param;
+    
     usleep(thread_func_args->wait_to_obtain_ms * 1000);
     
     if (pthread_mutex_lock(thread_func_args->mutex) != 0) {

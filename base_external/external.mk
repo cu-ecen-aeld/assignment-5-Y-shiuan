@@ -1,0 +1,1 @@
+BR2_EXTERNAL_PROJECT_BASE=$(BASE_DIR)/../base_external
